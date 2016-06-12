@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lasss.root.bridgetogrid.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:text="Bridge To Grid" />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/wikipediaButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wikipedia"
+                android:onClick="searchWikipedia"/>
+
+            <Button
+                android:id="@+id/financeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Finance"
+                android:onClick="searchFinance"/>
+
+            <Button
+                android:id="@+id/weatherButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Weather"
+                android:onClick="searchWeather"/>
+
+            <Button
+                android:id="@+id/newsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="News"
+                android:onClick="searchNews"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</RelativeLayout>
